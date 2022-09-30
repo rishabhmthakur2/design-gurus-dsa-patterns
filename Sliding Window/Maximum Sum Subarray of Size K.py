@@ -26,6 +26,10 @@ print(findMaximumSum([2,1,5,1,3,12], 3))
 # Add incoming element to window sum
 # Compare window sum with max sum and store the highest
 # This is optimized as we are resuing the sum of the last window
+
+# TC: O(n)
+# SC: O(1)
+
 def findMaximumSumOptimized(arr, k):
     maxSum = currentSum = sum(arr[:k])
     for i in range(1, len(arr)- k + 1):
